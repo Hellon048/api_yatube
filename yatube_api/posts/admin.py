@@ -14,7 +14,6 @@ class GroupAdmin(admin.ModelAdmin):
     list_display = ('pk', 'title', 'slug', 'description')
     search_fields = ('title',)
     list_filter = ('slug',)
-    empty_value_display = '-пусто-'
 
 
 class CommentAdmin(admin.ModelAdmin):
