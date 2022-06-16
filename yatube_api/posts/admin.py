@@ -20,7 +20,6 @@ class CommentAdmin(admin.ModelAdmin):
     list_display = ('pk', 'post', 'author', 'text', 'created')
     search_fields = ('post',)
     list_filter = ('author',)
-    empty_value_display = '-пусто-'
 
 
 admin.site.register(Post, PostAdmin)
